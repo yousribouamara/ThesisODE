@@ -20,7 +20,7 @@ BCC_0 = 100  #Initial number of breast cancer cells, have to count?
 time = np.linspace(0, 28, 1000)
 
 # Parameter Values (adjust later))
-alpha_BCC = 0.05  #Cancer cell growth rate
+alpha_BCC = 0.369  #Cancer cell growth rate
 gamma_M1 = 0.03  #Killing rate by M1 macrophages
 beta_M2 = 0.02  #Growth promotion by M2 macrophages
 
