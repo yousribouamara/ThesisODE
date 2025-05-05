@@ -35,7 +35,7 @@ for (label, filename), marker, color in zip(files.items(), markers, colors):
 
 plt.xlabel("Time (hours)")
 plt.ylabel("Normalized confluence")
-plt.title("Cancer cell Growth Over Time Under different Macrophage Conditions")
+plt.title("Cancer cell growth in time with different Macrophage Conditions")
 plt.legend(loc="upper left", bbox_to_anchor=(1, 1))
 plt.grid(True)
 plt.tight_layout()
