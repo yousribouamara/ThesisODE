@@ -34,8 +34,8 @@ for (label, filename), marker, color in zip(files.items(), markers, colors):
     plt.plot(x, y, label=label, marker=marker, color=color, linewidth=2, markersize=6)
 
 plt.xlabel("Time (hours)")
-plt.ylabel("Normalized Confluence")
-plt.title("Cancer Cell Growth Over Time Under Various Macrophage Conditions")
+plt.ylabel("Normalized confluence")
+plt.title("Cancer cell Growth Over Time Under different Macrophage Conditions")
 plt.legend(loc="upper left", bbox_to_anchor=(1, 1))
 plt.grid(True)
 plt.tight_layout()
@@ -86,7 +86,7 @@ rates = {
     "231 + M2 CC": r_basal + r_M2_CC
 }
 
-# ODE model: simple exponential growth
+# ODE model: exponential growth
 def dCdt(C, t, r):
     return r * C
 
@@ -113,7 +113,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import odeint
 
-# Define r values (use your actual calculated values here)
+# Define r values
 r_basal = growth_rates["rate_231_alone"]
 r_M1_CM = growth_rates["rate_231_plus_m1_cm"] - r_basal
 r_M1_CC = growth_rates["rate_231_plus_m1_cc"] - r_basal
