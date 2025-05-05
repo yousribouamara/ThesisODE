@@ -70,6 +70,7 @@ print("M2 CC growth rate:", growth_rates["rate_231_plus_m2_cc"])
 
 
 # Now let's get the growth rates by subtracting the basal rate (231 alone) from the combined ones.
+# this gives us an estimate of what the 'negative' growth rates are
 # Define r values
 r_basal = growth_rates["rate_231_alone"]
 r_M1_CM = growth_rates["rate_231_plus_m1_cm"] - r_basal
